@@ -3,8 +3,31 @@
     This is the first component and I am < h1 > element withing a < div >
     element.
   </h1>
+
   <span>
     Angular CSS are also scoped, therefore, if I use a color red for all the h1
     in this component, the h1 color red will not leak to other components.
   </span>
+
+  <br />
+
+  <span>
+    This is the string I have as property of my component:
+    <span
+      style="
+        color: rgb(136, 161, 136);
+        font-weight: bolder;
+        text-decoration: underline;
+      "
+    >
+      {{ stringData }}
+    </span>
+  </span>
+
+  <br />
+  This is some boolean: {{ someBoolean }}
+  <br />
+  This is some object: {{ someObject }}
+  <br />
+  This is some array: {{ someArray }}
 </div>
