@@ -1,0 +1,18 @@
+<div class="ifRender" [ngClass]="ifRenderClasses">
+  <h1>Conditional Rendering</h1>
+
+  <span *ngIf="canShow">
+    I am allowed to be here because my boolean is true; My condition be here is
+    if 'canShow' equals to true;
+  </span>
+  <span *ngIf="name === 'Bass'">
+    If the condition I want is true, I'll be shown; The name is {{ name }}
+  </span>
+  <span *ngIf="name === 'Zero' || name === 'X'; else unkownHunter">
+    One of the most famous maverick hunter, here it {{ name }}
+  </span>
+  <ng-template #unkownHunter>
+    This maverick hunter is unkown, but we'll get the chance to meet him, he's
+    name is {{ name }}
+  </ng-template>
+</div>
