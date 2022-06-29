@@ -1,0 +1,26 @@
+<div [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'gap': '5px'}">
+    <h1>example of Styles css directives</h1>
+    <h2>This div was styled using such directives, 
+        for this directive to be initialized I call '[ngSomething]', in this case was '[ngStyle]'
+    </h2>
+    <h2 style="
+        color: 'green';
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: 'underline';
+        ">
+        Example without using angular directives
+    </h2>
+    <h2 [ngStyle]="{'color': 'green', 'font-family': 'Segoe UI', 'text-decoration': 'underline'}">
+        Example using angula directives
+    </h2>
+    <h2 [ngStyle]="{
+        'color': directiveStyles.color,
+        'text-decoration': directiveStyles.textDecoration,
+        'size': directiveStyles.size + 'px'
+    }">
+        Another example using angular directives getting the styled data straight from the component.component.ts
+    </h2>
+
+    <h1 [ngClass]="classH1">Example of class directives</h1>
+    <h2 [ngClass]="multipleClasses">Anothe example of class directives</h2>
+</div>
