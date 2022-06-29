@@ -13,6 +13,15 @@ export class ParentDataComponent implements OnInit {
   @Input() propsFromParentApp!: MaverickHunter;
   //In this second object I atribuited my object to what it could be a interface, so I want my userData to be an object that has the properties you see below.
   @Input() userData!: { username: string, email: string, password: string };
+
+  colors: object = {
+    color1: 'Blue',
+    color2: 'Green',
+    color3: 'Orange',
+    color4: 'Red',
+    color5: 'Yellow',
+    color6: 'Ditto',
+  }
   constructor() { }
 
   ngOnInit(): void {

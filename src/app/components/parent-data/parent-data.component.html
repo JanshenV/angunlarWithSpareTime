@@ -18,4 +18,8 @@
       {{userInfo.key}}: {{ userInfo.value}} <br />
     </span>
   </span>
+  <br />
+  <span *ngFor="let color of colors | keyvalue">
+    {{color.key}}: {{color.value}}<br/>
+  </span>
 </div>
