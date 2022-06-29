@@ -3,10 +3,19 @@
     This is the data that my parent(appComponent) shared with me:
     {{ propsFromParentApp }}
   </h1>
-  <span
-    >As the shared prop was an object, this is their property:
-    {{ propsFromParentApp.name }}
-    {{ propsFromParentApp.profession }}
-    {{ propsFromParentApp.age }}
+  <span>
+    As the shared prop was an object, this is their property:
+    <br />
+    <span *ngFor="let propData of propsFromParentApp | keyvalue">
+        {{propData.key}}: {{ propData.value}} <br />
+      </span>
+  </span>
+  <br />
+  <span>
+    The other object that does not uses the interface:
+    <br />
+    <span *ngFor="let userInfo of userData | keyvalue">
+      {{userInfo.key}}: {{ userInfo.value}} <br />
+    </span>
   </span>
 </div>

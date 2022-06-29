@@ -16,7 +16,7 @@ export class ParentDataComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  
+    Object.entries(this.userData).forEach(([key, value]) => console.log(key))
   }
 
 }
