@@ -1,0 +1,12 @@
+<div>
+  <h1>I'll be handling events and events emittions.</h1>
+  <h1 *ngIf="showMessage">
+    I am here because the condition says so, if I am not...
+  </h1>
+  <button (click)="handleShowMessage()" *ngIf="showMessage; else hideMessage">
+    Hide message.
+  </button>
+  <ng-template #hideMessage>
+    <button (click)="handleShowMessage()">Show hidden message</button>
+  </ng-template>
+</div>
