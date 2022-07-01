@@ -1,0 +1,11 @@
+button {
+    width: 200px;
+    background: gold;
+    color: black;
+    border: 2px solid rgb(53, 49, 49);
+    display: inline-block;
+}
+
+button:active {
+    transform: translateY(4px);
+}

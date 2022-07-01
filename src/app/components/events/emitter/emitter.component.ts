@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-emitter',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmitterComponent implements OnInit {
   showMessage: boolean = false;
-  constructor() { }
-
+  disstressNumber: number = 0;
+  // distressMessage: string = ""
   ngOnInit(): void {
+
   }
 
   //Typescript good practice:
@@ -18,4 +19,10 @@ export class EmitterComponent implements OnInit {
   handleShowMessage(): void{
     this.showMessage = !this.showMessage;
   }
+
+  //Receiving emission
+  onChangeNumber({number}: {number: number}){
+    this.disstressNumber = Math.floor(Math.random() * (this.disstressNumber + 10));
+  }
+  
 }

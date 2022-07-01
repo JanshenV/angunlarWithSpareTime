@@ -9,4 +9,14 @@
   <ng-template #hideMessage>
     <button (click)="handleShowMessage()">Show hidden message</button>
   </ng-template>
+
+  <h1>Receiving emisisons</h1>
+  <span>Number: {{ disstressNumber }}</span>
+  <br />
+
+  <!-- <h1>
+    I captured a an emission and this is the message: {{ distressMessage }}
+  </h1> -->
+  <app-change-number (changeNumber)="onChangeNumber($event)">
+  </app-change-number>
 </div>
