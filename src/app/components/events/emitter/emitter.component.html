@@ -14,9 +14,10 @@
   <span>Number: {{ disstressNumber }}</span>
   <br />
 
-  <!-- <h1>
+  <h1 *ngIf="distressMessage">
     I captured a an emission and this is the message: {{ distressMessage }}
-  </h1> -->
+  </h1>
   <app-change-number (changeNumber)="onChangeNumber($event)">
   </app-change-number>
+  <app-disstress-beacon (Beacon)="onBeacon($event)"> </app-disstress-beacon>
 </div>

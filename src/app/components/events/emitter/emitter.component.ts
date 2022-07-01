@@ -8,7 +8,11 @@ import { Component, OnInit} from '@angular/core';
 export class EmitterComponent implements OnInit {
   showMessage: boolean = false;
   disstressNumber: number = 0;
-  // distressMessage: string = ""
+  distressMessage: string = ""
+
+  destroyDistressMessage = setInterval(() => {
+    this.distressMessage = "";
+  }, 5000);
   ngOnInit(): void {
 
   }
@@ -23,6 +27,9 @@ export class EmitterComponent implements OnInit {
   //Receiving emission
   onChangeNumber({number}: {number: number}){
     this.disstressNumber = Math.floor(Math.random() * (this.disstressNumber + 10));
+  }
+  onBeacon({ message }: { message: string }) {
+    this.distressMessage = message;
   }
   
 }

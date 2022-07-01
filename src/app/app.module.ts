@@ -9,6 +9,7 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EmitterComponent } from './components/events/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/events/change-number/change-number.component';
+import { DisstressBeaconComponent } from './components/events/disstress-beacon/disstress-beacon.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChangeNumberComponent } from './components/events/change-number/change-
     DirectivesComponent,
     IfRenderComponent,
     EmitterComponent,
-    ChangeNumberComponent
+    ChangeNumberComponent,
+    DisstressBeaconComponent
   ],
   imports: [
     BrowserModule,
