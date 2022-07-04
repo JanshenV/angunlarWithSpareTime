@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MaverickHunter } from 'src/app/MaverickHunter';
+import { MaverickHunter } from '../app/Interfaces/MaverickHunter';
+import { UserData } from './Interfaces/UserData';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent {
     profession: 'Maverick Hunter',
     age: 'Unknown',
   }
-  userData = {
+  userData: UserData = {
     username: 'X',
     email: "X@maverickHunter.com",
     password: '*********'
