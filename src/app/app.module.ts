@@ -10,6 +10,7 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EmitterComponent } from './components/events/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/events/change-number/change-number.component';
 import { DisstressBeaconComponent } from './components/events/disstress-beacon/disstress-beacon.component';
+import { ListRenderingComponent } from './components/list-rendering/list-rendering.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DisstressBeaconComponent } from './components/events/disstress-beacon/d
     IfRenderComponent,
     EmitterComponent,
     ChangeNumberComponent,
-    DisstressBeaconComponent
+    DisstressBeaconComponent,
+    ListRenderingComponent
   ],
   imports: [
     BrowserModule,

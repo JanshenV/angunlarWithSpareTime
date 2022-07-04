@@ -1,0 +1,19 @@
+<div>
+  <ul>
+    <li
+      style="display: flex; flex-direction: column; justify-content: center"
+      *ngFor="let task of tasksExample"
+    >
+      <div style="border-bottom: none; margin-bottom: 0">
+        <span style="font-weight: bolder">Task:</span>
+        {{ task.taskName }}
+      </div>
+
+      <div style="border-bottom: none">
+        <span style="font-weight: bolder">Done:</span>
+        <span *ngIf="task.done">Complete</span>
+        <span *ngIf="!task.done">Incomplete</span>
+      </div>
+    </li>
+  </ul>
+</div>
