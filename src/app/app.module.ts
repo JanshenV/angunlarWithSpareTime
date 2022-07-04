@@ -11,6 +11,7 @@ import { EmitterComponent } from './components/events/emitter/emitter.component'
 import { ChangeNumberComponent } from './components/events/change-number/change-number.component';
 import { DisstressBeaconComponent } from './components/events/disstress-beacon/disstress-beacon.component';
 import { ListRenderingComponent } from './components/list-rendering/list-rendering.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ListRenderingComponent } from './components/list-rendering/list-renderi
     EmitterComponent,
     ChangeNumberComponent,
     DisstressBeaconComponent,
-    ListRenderingComponent
+    ListRenderingComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
