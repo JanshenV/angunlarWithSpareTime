@@ -1,0 +1,26 @@
+<div
+  [ngStyle]="{
+    display: 'flex',
+    'flex-direction': 'column',
+    background: 'gold',
+    width: '15%'
+  }"
+>
+  <div [ngClass]="itemClass" *ngFor="let task of appTasks">
+    <img
+      *ngIf="task.checked"
+      src="../assets/checked.svg"
+      alt="Checkbox Checked!"
+      (click)="checkTask(task.id)"
+    />
+    <img
+      *ngIf="!task.checked"
+      src="../assets/unchecked.svg"
+      alt="Checkbox Unchecked!"
+      (click)="checkTask(task.id)"
+    />
+    <span>
+      {{ task.name }}
+    </span>
+  </div>
+</div>
